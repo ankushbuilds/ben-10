@@ -4,14 +4,14 @@ import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const aliens = [
-    "/images/alien1.png",
-    "/images/alien2.png",
-    "/images/alien3.png",
-    "/images/alien4.png",
-    "/images/alien5.png",
-    "/images/alien6.png",
-  ];
+ const aliens = [
+  `${import.meta.env.BASE_URL}images/alien1.png`,
+  `${import.meta.env.BASE_URL}images/alien2.png`,
+  `${import.meta.env.BASE_URL}images/alien3.png`,
+  `${import.meta.env.BASE_URL}images/alien4.png`,
+  `${import.meta.env.BASE_URL}images/alien5.png`,
+  `${import.meta.env.BASE_URL}images/alien6.png`,
+];
 
   const repeatedAliens = [...aliens, ...aliens, ...aliens];
 

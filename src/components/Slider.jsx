@@ -7,7 +7,7 @@ const Slider = () => {
   const aliens = [
     {
       name: "Swampfire",
-      img: "/images/slider4.png",
+img: `${import.meta.env.BASE_URL}images/slider4.png`,
       description:
         "A methane-based alien with plant powers and the ability to ignite flames." +
         "Swampfire is covered with a tough, bark-like skin that makes him resistant to physical damage." +
@@ -18,7 +18,7 @@ const Slider = () => {
     },
     {
       name: "Humungousaur",
-      img: "/images/slider6.png",
+img: `${import.meta.env.BASE_URL}images/slider6.png`,
       description:
         "A giant dinosaur-like alien with immense strength and durability." +
         "Standing over 12 feet tall, Humungousaur’s sheer size makes him a powerhouse in any fight." +
@@ -29,7 +29,7 @@ const Slider = () => {
     },
     {
       name: "Big Chill",
-      img: "/images/slider1.png",
+img: `${import.meta.env.BASE_URL}images/slider1.png`,
       description:
         "A moth-like alien with the power of intangibility and ice breath." +
         "Big Chill can phase through solid objects, making him nearly impossible to trap or contain." +
@@ -40,7 +40,7 @@ const Slider = () => {
     },
     {
       name: "Echo Echo",
-      img: "/images/slider2.png",
+      img: `${import.meta.env.BASE_URL}images/slider2.png`,
       description:
         "A small silicon-based alien capable of creating sonic clones." +
         "Echo Echo’s primary ability is to duplicate himself, overwhelming opponents with sheer numbers." +
@@ -51,7 +51,7 @@ const Slider = () => {
     },
     {
       name: "Chromastone",
-      img: "/images/slider5.png",
+      img: `${import.meta.env.BASE_URL}images/slider5.png`,
       description:
         "A crystalline alien with the ability to absorb and channel energy." +
         "Chromastone’s body is composed of nearly indestructible crystal, making him resistant to physical and energy-based attacks.\n\n" +
@@ -62,7 +62,7 @@ const Slider = () => {
     },
     {
       name: "Rath",
-      img: "/images/slider3.png",
+      img: `${import.meta.env.BASE_URL}images/slider3.png`,
       description:
         "A tiger-like alien with unmatched strength and ferocity." +
         "Rath is covered in orange fur with black stripes, sharp claws, and a muscular build that makes him a fearsome close-combat fighter." +
