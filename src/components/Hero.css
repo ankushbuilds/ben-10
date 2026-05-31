@@ -1,41 +1,70 @@
 .hero {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(135deg, #04703d, #000);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #04703d, #000);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alien-slider {
+  display: flex;
+  gap: 50px;
+  cursor: grab;
+  margin-top: 100px;
+}
+
+.alien-slider:active {
+  cursor: grabbing;
+}
+
+.alien-card {
+  min-width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alien-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.alien-card img:hover {
+  transform: scale(1.1);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
   .alien-slider {
-    display: flex;
-    gap: 50px;
-    cursor: grab;
-    margin-top: 100px;
+    gap: 30px;
+    margin-top: 70px;
   }
-  
-  .alien-slider:active {
-    cursor: grabbing;
-  }
-  
+
   .alien-card {
-    min-width: 300px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-width: 250px;
+    height: 330px;
   }
-  
-  .alien-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .alien-slider {
+    gap: 20px;
+    margin-top: 50px;
   }
-  
+
+  .alien-card {
+    min-width: 200px;
+    height: 280px;
+  }
+
   .alien-card img:hover {
-    transform: scale(1.1);
+    transform: none;
   }
-  
+}
